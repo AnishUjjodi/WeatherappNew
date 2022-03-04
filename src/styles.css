@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: "open";
+   src:  url('./assets/fonts/open_sans/OpenSans.woff') format("woff"),
+   url('./assets/fonts/open_sans/OpenSans-bold.woff') format("woff"),
+   url('./assets/fonts/open_sans/OpenSans-light.woff') format("woff"),
+   url('./assets/fonts/open_sans/OpenSans-semibold.woff') format("woff");
+}
+body{
+    background-image: url('assets/img/background.png');
+    background-color: #cccccc; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    font-family: "open";
+}

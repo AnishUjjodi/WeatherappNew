@@ -1,0 +1,18 @@
+
+  <div class="header">
+    <div class="logoweb ">
+    <img src="assets/img/logo_web.png" >
+    </div>
+
+    <div class="searchbarwithicon">
+        <!-- <div class="search"> -->
+           <input type="text" class="searchTerm" (keyup.enter)="onSearch()"  placeholder="Search city" [(ngModel)]="inputData">
+           <button (click)="onSearch()" routerLink="/home" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     <!-- </div> -->
+</div>
+    <app-navigation  ></app-navigation>
+
+

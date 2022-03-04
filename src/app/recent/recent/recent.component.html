@@ -1,0 +1,36 @@
+<ng-container *ngIf="lists!=''">
+    <div class="containerr">
+        <div class="recenttag">
+            <p id="ele1"style="color:white;">You recently searched for</p>
+            <button id="ele2" class="butto" style="color:white;" (click)="clearall()">Clear All</button>
+        </div>
+        <table class="tablee"> 
+            <tbody>
+                <tr class="tableback" *ngFor="let list of lists?.reverse()" >
+                    <td >
+                        {{list.name}}
+                    </td>
+                    <td >
+                        <img class="des" src="assets/img/{{list.weather[0].description}}.png" alt="W3Schools.com" >
+                    </td>
+                    <td >
+                        {{list.temp_celcius}}<span>&#176;</span>
+                    </td>
+                    <td >
+                        {{list.weather[0].description| titlecase}}
+                    </td>
+                   
+                    <td>
+                        <button id="heartbtn" [ngStyle]="{color:changeColor(list)}" (click)="unlike(list)">
+                            <i class="fa" style="font-size:18px;">&#xf004;</i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</ng-container>
+<ng-container *ngIf="lists==''">
+    <img id="empty" src="assets/img/icon_nothing.png" ><br><br> 
+                <h2 id="emptytext">No Recent Search</h2>
+</ng-container>

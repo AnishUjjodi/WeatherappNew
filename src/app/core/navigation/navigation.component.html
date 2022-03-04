@@ -1,0 +1,15 @@
+<div class="navwithline">
+    <div class="nav">
+      <a class="home" routerLink="/home" >HOME</a>
+      <a style="margin-left:49px"class="favourite" routerLink="/favourite" >FAVOURITE</a>
+      <a style="margin-left:49px"class="recent" routerLink="/recentsearch">RECENT</a>
+      <div class="time" id ="date">
+         {{dateVariable | date:'EEE'|uppercase}}, {{dateVariable | date:'dd'}} {{dateVariable | date:'MMM'|uppercase}} {{dateVariable | date:'yyyy'}}&nbsp;  {{ dateVariable | date:'hh'}}:{{dateVariable | date:'mm'}} {{dateVariable | date:'a'}}
+      </div>
+    </div>
+    <hr stye="margin-top:-20px;">
+  </div>
+
+
+
+  

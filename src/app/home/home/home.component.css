@@ -1,0 +1,288 @@
+.footer {
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 45px;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    max-width: 1500px;
+    min-width: 800px;
+    width: 75%;
+    color: white;
+    justify-content: space-around;
+}
+
+.foo{
+  display: flex;
+}
+
+.foo p{
+  font-size: 18px;
+}
+
+.foocontent{
+  margin-left: 9px;
+  margin-top: -7px;
+}
+ 
+#fooimg{
+  width: 56px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.toggle button{
+    width: 28px;
+    height:30px;
+    border: 2px solid white;  
+}
+
+.feel{
+    font-size: 64px;
+}
+
+.heart{
+    width:28px; 
+    border: none;
+    background-color: transparent;
+}
+
+.fa-heart{
+    
+    color: yellow;
+    font-size: 24px ;
+  }
+
+.fa-heart-o{
+    color:white;
+    font-size: 24px ;
+}
+
+.centerData{
+    width:100%;
+    text-align: center;    
+}
+
+.weathercityname{
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+#weather {
+    max-height: 106px;
+    max-width: 106px;
+    width: 100%;
+}
+
+#temperature{
+    font-size: 84px;
+    font-weight: bold;
+    color: white;
+    margin: 0px 19px 0px;
+}
+
+.main{
+    display: flex;
+    height: 40px;
+    width: 83px;
+    margin-top: 20px;
+}
+
+#btn1,#btn2{
+    font-size: 22px;
+    line-height: 2;
+    font-family: 'open';
+    font-weight: bold;
+    color: red;
+    max-width:100px;
+    max-height:50px;
+    height: 100%;
+    width: 100%;
+}
+
+span {
+    position: relative;
+    top: -4px;
+}
+
+#des{
+      color:white;
+}
+
+hr{
+  margin-top: 176px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid rgba(255,255,255,0.3);
+}
+
+.display{
+  display: flex;
+  margin-top: 14px;
+ 
+}
+
+#nearheart{
+  margin:0;
+  margin-top: 4px;
+  margin-left: 9px;
+}
+
+@media (min-width:800px) and (max-width: 950px) {
+  
+  .foo p{
+    font-size: 16px;
+  }
+  #fooimg{
+    width: 50px;
+     height: 36px;
+  }
+
+  .weathercityname{
+    font-size: 18px;
+  }
+
+  #weather {
+    max-height: 94px;
+    max-width: 94px;
+    
+  }
+
+  #temperature{
+    font-size: 76px;
+  }
+
+  .main{
+    height: 30px;
+    width: 73px;
+  }
+
+  #btn1,#btn2{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .footer{
+    min-width: 597px;
+  }
+
+  hr{
+    margin-top: 77px;
+    width: 100%;
+  }
+
+  .centerData{
+    width:100%;
+  }
+}
+
+@media (min-width:580px) and (max-width: 795px) {
+  .foo p{
+    font-size: 10px;
+  }
+  #fooimg{
+    width: 45px;
+    height: 30px;
+  }
+
+  .weathercityname{
+    font-size: 16px;
+  }
+
+  #weather {
+    max-height: 74px;
+    max-width: 74px;
+    
+  }
+
+  #temperature{
+    font-size: 56px;
+  }
+
+  .main{
+      height: 25px;
+    width: 60px;
+  }
+
+  #btn1,#btn2{
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .footer{
+    min-width: 597px;
+  }
+
+  hr{
+    margin-top: 113px;
+
+    width: 75%;
+  }
+
+  .centerData{
+    margin-top: 43px;
+    width:80%;
+  }
+} 
+
+@media (min-width:300px) and (max-width: 394px) {
+.weathercityname{
+  margin-top: 20px;
+  margin-left: -25px;
+  margin-right: auto;
+}
+
+.display{
+  margin-left: -4px;
+  margin-right: auto;
+}
+.centerData{
+  margin-left: -276px;
+  margin-top: 65px;
+}
+
+#weather{
+  max-height: 80px;
+  max-width: 80px;
+}
+
+#temperature{
+  font-size: 68px;
+}
+
+.main{
+  height: 38px;
+}
+
+#des{
+  font-size: 24px;
+}
+
+hr{
+  margin-left: -81px;
+}
+
+.footer{
+  background-color: rgba(255,255,255,0.12);
+  height: 159px;
+  left: -108px;
+  bottom: 1001px;
+}
+
+.foocontent{
+  margin-top: 53px;
+}
+
+#fooimg{
+  margin-top: 53px;
+}
+}
